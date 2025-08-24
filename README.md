@@ -155,6 +155,10 @@ We welcome contributions!
 
 Once your pull request has been merged, you can delete your branch.
 
+## 🙏 Credits
+
+- [shshemi/tabiew](https://github.com/shshemi/tabiew)
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
