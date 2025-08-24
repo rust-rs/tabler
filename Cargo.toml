@@ -17,7 +17,7 @@ name="tabler"
 path="src/main.rs"
 
 [dependencies]
-clap = { version = "4.5.42", features = ["derive"] }
+clap = { version = "4.5.45", features = ["derive"] }
 crossterm = "0.29.0"
 fwf-rs = "0.2.0"
 itertools = "0.14.0"
@@ -29,7 +29,7 @@ rand = "0.8.5"
 ratatui = "0.29.0"
 
 [build-dependencies]
-clap = { version = "4.5.42", features = ["derive"] }
+clap = { version = "4.5.45", features = ["derive"] }
 clap_mangen = { version = "0.2.29"}
 clap_complete = { version = "4.5.55"}
 
