@@ -25,7 +25,7 @@ polars = { version = "0.45.1", features = ["dtype-decimal", "lazy", "polars-sql"
 polars-sql = "0.45.1"
 polars-arrow = "0.46.0"
 polars-lazy = "0.45.1"
-rand = "0.8.5"
+rand = "0.9.2"
 ratatui = "0.29.0"
 
 [build-dependencies]
