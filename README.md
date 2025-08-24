@@ -155,7 +155,7 @@ We welcome contributions!
 
 Once your pull request has been merged, you can delete your branch.
 
-## 🙏 Credits
+## 🙏 Acknowledgements
 
 - [shshemi/tabiew](https://github.com/shshemi/tabiew)
 
