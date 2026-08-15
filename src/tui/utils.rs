@@ -55,12 +55,13 @@ pub fn data_frame_widths(df: &polars::frame::DataFrame) -> Vec<usize> {
     df.get_column_names()
         .into_iter()
         .zip(df.get_columns())
-        .map(|(col, series)| col.len().max(series_width(series)))
+        .map(|(col, series)| col.len().max(series_width(series.as_materialized_series())))
         .collect::<Vec<_>>()
 }
 
 pub fn series_width(series: &Series) -> usize {
     series
+        .rechunk()
         .iter()
         .map(|any_value| {
             any_value_into_string(any_value)
