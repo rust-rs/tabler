@@ -62,6 +62,7 @@ fn main() -> AppResult<()> {
         AppTheme::Monokai => start_tui::<themes::Monokai>(tabs, sql_backend, script),
         AppTheme::Argonaut => start_tui::<themes::Argonaut>(tabs, sql_backend, script),
         AppTheme::Terminal => start_tui::<themes::Terminal>(tabs, sql_backend, script),
+        AppTheme::Dracula => start_tui::<themes::Dracula>(tabs, sql_backend, script),
     }
 }
 

@@ -114,6 +114,7 @@ pub enum AppTheme {
     Monokai,
     Argonaut,
     Terminal,
+    Dracula,
 }
 
 impl InferSchema {

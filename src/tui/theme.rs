@@ -100,6 +100,7 @@ where
 pub struct Monokai;
 pub struct Argonaut;
 pub struct Terminal;
+pub struct Dracula;
 
 impl SixColorsTwoRowsStyler for Monokai {
     const BACKGROUND: Color = Color::from_u32(0x001c191d);
@@ -207,4 +208,35 @@ impl Styler for Terminal {
     fn status_bar_info_val(_idx: usize) -> Style {
         Style::default()
     }
+}
+
+impl SixColorsTwoRowsStyler for Dracula {
+    const BACKGROUND: Color = Color::from_u32(0x00282a36);
+    const LIGHT_BACKGROUND: Color = Color::from_u32(0x0044475a);
+    const FOREGROUND: Color = Color::from_u32(0x00f8f8f2);
+
+    const COLORS: [Color; 6] = [
+        Color::from_u32(0x00ff79c6),
+        Color::from_u32(0x00ffb86c),
+        Color::from_u32(0x00f1fa8c),
+        Color::from_u32(0x0050fa7b),
+        Color::from_u32(0x008be9fd),
+        Color::from_u32(0x00bd93f9),
+    ];
+    const DARK_COLORS: [Color; 6] = [
+        Color::from_u32(0x00ff79c6),
+        Color::from_u32(0x00ffb86c),
+        Color::from_u32(0x00f1fa8c),
+        Color::from_u32(0x0050fa7b),
+        Color::from_u32(0x008be9fd),
+        Color::from_u32(0x00bd93f9),
+    ];
+
+    const ROW_BACKGROUNDS: [Color; 2] = [Color::from_u32(0x001e1f29), Self::BACKGROUND];
+    const HIGHTLIGHT_BACKGROUND: Color = Color::from_u32(0x0044475a);
+    const HIGHTLIGHT_FOREGROUND: Color = Self::FOREGROUND;
+
+    const STATUS_BAR_ERROR: Color = Color::from_u32(0x00ff5555);
+    const STATUS_BAR_PROMPT: Color = Color::from_u32(0x0050fa7b);
+    const STATUS_BAR_INFO: Color = Self::BACKGROUND;
 }
